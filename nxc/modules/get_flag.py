@@ -12,10 +12,10 @@ class NXCModule:
     def options(self, context, module_options):
         """
         PATH: The path from where to grab the flag from
-        FLAG_NAME: The name of the file where the flag is stored (Default: user.txt, if Administrator, then Default: root.txt)
+        FLAG: The name of the file where the flag is stored (Default: user.txt, if Administrator, then Default: root.txt)
         USER: The user's desktop from which we must grab the flag from
         """
-        self.flag_name = module_options.get("FLAG_NAME") or None
+        self.flag_name = module_options.get("FLAG") or None
         self.path = module_options.get("PATH") or ""
         self.user = module_options.get("USER") or None
 
