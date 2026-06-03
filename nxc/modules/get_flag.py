@@ -6,7 +6,7 @@ class NXCModule:
 
     name = "get_flag"
     description = "Get the flag for the given user (Default: current user)"
-    supported_protocols = ["smb", "winrm"]
+    supported_protocols = ["smb", "winrm", "mssql"]
     category = CATEGORY.ENUMERATION
 
     def options(self, context, module_options):
